@@ -15,6 +15,32 @@
   </head>
 
   <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="/users">Users</a>
+        </li>
+        <li>
+          <a href="/photos">Photos</a>
+        </li>
+        <li>
+          <a href="/user_sign_up">User Sign Up</a>
+        </li>
+        <li>
+          <a href="/user_sign_out">Sign Out</a>
+        </li>
+      </ul>
+    </nav>
+
+    <% if alert.present? %>
+      <div>
+        <%= alert %>
+      </div>
+    <% end %>
+
+    <div>
+      <%= notice %>
+    </div>
     <%= yield %>
   </body>
 </html>
